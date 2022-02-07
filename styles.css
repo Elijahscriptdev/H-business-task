@@ -42,6 +42,9 @@ a {
   z-index: 9999;
   padding: 30px 0px 0 0px;
   color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 #side__menu .side__menu__links {
@@ -87,6 +90,8 @@ a {
   width: calc(100% - 250px);
   height: 100%;
   background-color: var(--cream);
+  margin-left: 250px;
+  position: relative;
 }
 
 #main__content .main__content__header {
@@ -97,6 +102,10 @@ a {
   border-bottom: 2px solid var(--blue);
   background: var(--link-hover);
   /* box-shadow: #222a44 0px 0px 0px 1px; */
+  position: fixed;
+  top: 0;
+  /* left: 0; */
+  width: calc(100% - 250px);
 }
 
 #main__content .main__content__header .search__container {
@@ -141,8 +150,123 @@ a {
   object-fit: cover;
 }
 
-#main__content .main__content__body  h2{
-    font-size: 20px;
-    font-weight: 600px;
-    margin: 20px 0px;
+.bars__wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#menu__btn {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--blue);
+  margin-right: 20px;
+}
+
+#main__content .main__content__body {
+  padding: 70px 30px 0;
+}
+
+#main__content .main__content__body h2 {
+  font-size: 20px;
+  font-weight: 600px;
+  margin: 20px 0px;
+}
+
+.table__board {
+  width: 94%;
+  margin: 30px 0 30px 30px;
+  overflow: auto;
+  background: var(--link-hover);
+  border-radius: 8px;
+}
+
+.table__board img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+/* .table__board table  */
+.people h5,
+.people__des h5 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+.people p,
+.people__des p,
+.active p,
+.role p,
+.edit p {
+  font-size: 14px;
+  font-weight: 400px;
+  margin: 0px;
+  padding: 0px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+thead td {
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #f9fafe;
+  text-transform: uppercase;
+  padding: 15px;
+  text-align: start;
+}
+
+tbody tr td {
+  padding: 10px 15px;
+  background: var(--link-hover);
+}
+
+.active p {
+  background-color: #d7fada;
+  padding: 2px 10px;
+  border-radius: 40px;
+  padding: 2px 10px;
+  display: inline-block;
+}
+
+@media (max-width: 769px) {
+  #side__menu {
+    width: 220px;
+    position: fixed;
+    left: -220px;
+    top: 60px;
+  }
+
+  #side__menu.active {
+    left: 0px;
+  }
+
+  #menu__btn {
+    display: initial;
+  }
+
+  #main__content {
+    margin-left: 0px;
+    width: 100%;
+    display: inline-block;
+  }
+
+  #side__menu.active ~ #main__content {
+    width: calc(100% + 220px);
+  }
+  #main__content .main__content__header {
+    width: 100%;
+  }
 }
