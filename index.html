@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/4e58b9e25e.js"
       crossorigin="anonymous"
@@ -61,5 +67,87 @@
         </ul>
       </div>
     </section>
+
+    <section id="main__content">
+      <div class="main__content__header">
+        <div class="search__container">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search" />
+        </div>
+
+        <div class="profile">
+          <i class="far fa-bell"></i>
+          <div class="profile__img">
+            <img src="images/dp.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main__content__body px-4 container-fluid">
+        <h2>Dashboard</h2>
+
+        <div class="row row-cols-sm-2 row-cols-lg-4 g-2 g-lg-3">
+          <div class="col">
+            <div class="p-3 border bg-white">
+              <div class="d-flex justify-content-between">
+                <h5>Total Users</h5>
+                <h5>
+                  <i class="fas fa-users text-primary"></i>
+                  <span>5</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-white">
+              <div class="d-flex justify-content-between">
+                <h5>Total Users</h5>
+                <h5>
+                  <i class="fas fa-users text-danger"></i>
+                  <span>5</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-white">
+              <div class="d-flex justify-content-between">
+                <h5>Total Users</h5>
+                <h5>
+                  <i class="fas fa-users text-warning"></i>
+                  <span>5</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-white">
+              <div class="d-flex justify-content-between">
+                <h5>Total Users</h5>
+                <h5>
+                  <i class="fas fa-users text-secondary"></i>
+                  <span>5</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
