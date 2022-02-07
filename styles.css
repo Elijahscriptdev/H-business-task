@@ -1,9 +1,9 @@
 :root {
   --blue: #222a44;
   --cream: #f7f7f7;
-  --white: #ffffff;
-  --link-hover: bisque;
-  --link-hover-background: #464C62;
+  --white: rgb(134, 141, 151);
+  --link-hover: #ffffff;
+  --link-hover-background: #3a4057;
 }
 
 * {
@@ -36,13 +36,9 @@ a {
   width: 250px;
   height: 100%;
   background-color: var(--blue);
-  position: fixed;
-  top: 0;
-  left: 0;
   z-index: 9999;
-  transition: transform 0.3s ease-in-out;
-  padding: 30px 10px 0 10px;
-  color: var(--cream);
+  padding: 30px 0px 0 0px;
+  color: var(--white);
 }
 
 #side__menu .side__menu__links {
@@ -50,7 +46,22 @@ a {
 }
 
 #side__menu .side__menu__links ul li {
-  padding: 10px 30px;
+  padding: 10px 0px;
+  transition: 0.4s ease;
+}
+
+#side__menu .side__menu__links ul li:hover {
+  background: var(--link-hover-background);
+  cursor: pointer;
+}
+
+#side__menu .side__menu__links ul li:nth-child(1) {
+  border-left: 4px solid var(--link-hover);
+}
+
+#side__menu .side__menu__links ul li:hover i,
+#side__menu .side__menu__links ul li:hover a {
+  color: var(--link-hover);
 }
 
 #side__menu .side__menu__links ul li i {
@@ -59,17 +70,12 @@ a {
   line-height: 30px;
   text-align: center;
   border-radius: 50%;
-  font-size: 14px;
-  margin-right: 10px;
+  font-size: 13px;
+  margin: 0 10px 0 25px;
 }
 
 #side__menu .side__menu__links ul li a {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300px;
-}
-
-#side__menu .side__menu__links ul li:hover {
-  color: var(--link-hover);
-  background: var(--link-hover-background);
-  border-radius: 10px;
+  transition: 0.4s ease;
 }
